@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sumfile</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../assets/css/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="frame">
+		<div class="fas fa-bars"></div>
+		<div class="label">Sumfile</div>
+
+		<div class="options">
+			<div class='fas fa-window-minimize' id='minimize'></div>
+			<div class="fas fa-times" id="close"></div>
+		</div>
+	</div>
+
+	<div class="top-bar">
+		<div class="logo"></div>
+		<div class="label">Label</div>
+
+		<nav>
+			<div class="tab actived">Local</div>
+			<div class="tab">Cloud</div>
+			<div class="fas fa-plus"></div>
+		</nav>
+	</div>
+
+	<div class="restore-session-box">
+		<div class="title">
+			Restore session ?
+			<div class="fas fa-cog"></div>
+		</div>
+
+		<div class="message">
+			This file was forced to close. Do you want to restore it ?
+
+			<div class="session">
+				<div class="name">
+					<div class="fas fa-file"></div>
+					myfile.txt
+				</div>
+
+				<div class="open-time">
+					<div class="fas fa-clock"></div>
+					Opened in: 05-01-2022 18:50:34
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="btn">Yes</div>
+			<div class="btn">No</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="title-bar">
+			<div class="fas fa-arrow-left"></div>
+			<div class="name">file.png</div>
+
+			<div class="right bdr-lef">
+				<div class="fas fa-file-circle-check"></div>
+				<div class="fas fa-share"></div>
+				<div class="fas fa-save"></div>
+			</div>
+
+			<div class="button">Base 64</div>
+			<div class="button actived">Hexadecimal</div>
+		</div>
+
+		<div class="left-bar">
+			<div class="tab actived">Hashes</div>
+			<div class="tab">Virus Total</div>
+			<div class="tab">Properties</div>
+			<div class="tab">Hex view</div>
+			<div class="tab">History</div>
+		</div>
+
+		<div class="list-content">
+			<div class="item">
+				<div class="label">CRC 32</div>
+				<input type="text" value="xxxxxxxxxxx">
+				<div class="fas fa-copy"></div>
+				<div class="fas fa-save"></div>
+			</div>
+
+			<div class="item">
+				<div class="label">MD 5</div>
+				<input type="text" value="xxxxxxxxxxx">
+				<div class="fas fa-copy"></div>
+				<div class="fas fa-save"></div>
+			</div>
+
+			<div class="item">
+				<div class="label">SHA 1</div>
+				<input type="text" value="xxxxxxxxxxx">
+				<div class="fas fa-copy"></div>
+				<div class="fas fa-save"></div>
+			</div>
+
+			<div class="item">
+				<div class="label">SHA 256</div>
+				<input type="text" value="xxxxxxxxxxx">
+				<div class="fas fa-copy"></div>
+				<div class="fas fa-save"></div>
+			</div>
+
+			<div class="item">
+				<div class="label">SHA 384</div>
+				<input type="text" value="xxxxxxxxxxx">
+				<div class="fas fa-copy"></div>
+				<div class="fas fa-save"></div>
+			</div>
+
+			<div class="item">
+				<div class="label">SHA 512</div>
+				<input type="text" value="xxxxxxxxxxx">
+				<div class="fas fa-copy"></div>
+				<div class="fas fa-save"></div>
+			</div>
+
+			<div class="item">
+				<div class="label">SHA3 224</div>
+				<input type="text" value="xxxxxxxxxxx">
+				<div class="fas fa-copy"></div>
+				<div class="fas fa-save"></div>
+			</div>
+
+			<div class="item">
+				<div class="label">SHA3 384</div>
+				<input type="text" value="xxxxxxxxxxx">
+				<div class="fas fa-copy"></div>
+				<div class="fas fa-save"></div>
+			</div>
+
+			<div class="item">
+				<div class="label">SHA3 512</div>
+				<input type="text" value="xxxxxxxxxxx">
+				<div class="fas fa-copy"></div>
+				<div class="fas fa-save"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="share-box">
+		<div class="title">
+			Share hash
+			<div class="fas fa-times"></div>
+			<div class="fas fa-link-slash"></div>
+		</div>
+
+		<div class="container">
+			<div class="privacy-list">
+				<div class="value">
+					<div class="fas fa-globe"></div>
+					<div class="label">Public</div>
+					<div class="mini-text">Anyone can view hash</div>
+				</div>
+
+				<div class="privacy">
+					<div class="item actived">
+						<div class="fas fa-globe"></div>
+						<div class="label">Public</div>
+						<div class="mini-text">Anyone can view hash</div>
+					</div>
+
+					<div class="item">
+						<div class="fas fa-lock"></div>
+						<div class="label">Private</div>
+						<div class="mini-text">Just you can view hash</div>
+					</div>
+
+					<div class="item">
+						<div class="fas fa-link"></div>
+						<div class="label">Unlisted</div>
+						<div class="mini-text">Just people with link can view hash</div>
+					</div>
+				</div>
+			</div>
+			
+			<button>Share</button>
+			<input type="text" placeholder="Code...">
+		</div>
+	</div>
+
+	<script src="../assets/js/app.js"></script>
+	<script src="../assets/js/gui.js"></script>
+</body>
+</html>

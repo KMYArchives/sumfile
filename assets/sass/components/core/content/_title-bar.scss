@@ -1,0 +1,39 @@
+.title-bar{
+	height: 8vh;
+	width: 149.75vh;
+	position: fixed;
+	line-height: 8vh;
+	z-index: 9999999999999;
+	box-sizing: border-box;
+	@include drop-shadow-sm;
+	background: $secondColor;
+	border-bottom: $border_size solid $borderColor;
+
+	.name{
+		float: left;
+		letter-spacing: 1px;
+		padding-left: $padding_base;
+		font-size: $smallFont + .05;
+	}
+
+	.button{
+		float: right;
+		width: 19.05vh;
+		cursor: pointer;
+		text-align: center;
+		font-size: $smallFont + .05;
+		@include hover($blueColor);
+	}
+
+	@include icons{
+		float: left;
+		width: 7.5vh;
+		cursor: pointer;
+		line-height: 8vh;
+		text-align: center;
+		font-size: $smallFont;
+		@include hover($blueColor);
+	}
+
+	.actived{ background: $blueColor; }
+}

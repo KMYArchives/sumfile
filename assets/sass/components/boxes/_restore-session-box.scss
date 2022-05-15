@@ -1,0 +1,78 @@
+.restore-session-box{
+	right: 0;
+	bottom: 0;
+	width: 50vh;
+	display: none;
+	position: fixed;
+	z-index: 99999999999;
+	margin: $padding_base;
+	background: $firstColor;
+	@include drop-shadow-sm;
+	@include no-text-select;
+	border-radius: $padding2;
+	border: $border_size solid $borderColor;
+	border-left: $padding2 solid $blueColor;
+
+	.title{
+		line-height: 6vh;
+		font-size: $smallFont + .1;
+		padding-left: $padding_base;
+		border-top-left-radius: $padding2;
+		border-top-right-radius: $padding2;
+
+		@include icons{
+			width: 6vh;
+			float: right;
+			cursor: pointer;
+			line-height: 6vh;
+			text-align: center;
+			border-top-right-radius: $padding2;
+			border-bottom-left-radius: $padding2;
+			@include hover;
+		}
+	}
+
+	.footer{
+		line-height: 6vh;
+		font-size: $smallFont + .1;
+		border-bottom-left-radius: $padding2;
+		border-bottom-right-radius: $padding2;
+
+		.btn{
+			width: 50%;
+			float: left;
+			cursor: pointer;
+			text-align: center;
+			box-sizing: border-box;
+			
+			@include hover;
+			&:last-child{ border-bottom-right-radius: $padding2; }
+		}
+	}
+
+	.message{
+		cursor: default;
+		padding: $padding_base;
+		@include no-text-select;
+		font-size: $smallFont + .1;
+
+		.session{
+			line-height: 7.5vh;
+			border-radius: $padding2;
+			background: $secondColor;
+			margin-top: $padding_base;
+			font-size: $smallFont + .05;
+
+			.name, .open-time{
+				line-height: 7.5vh;
+
+				@include icons{
+					width: 5vh;
+					text-align: center;
+					margin-left: $padding2;
+					margin-right: $padding2;
+				}
+			}
+		}
+	}
+}

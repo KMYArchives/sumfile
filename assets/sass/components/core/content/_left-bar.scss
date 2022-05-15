@@ -1,0 +1,23 @@
+.left-bar{
+	top: 0;
+	width: 22vh;
+	height: 78.3vh;
+	overflow: auto;
+	margin-top: 8vh;
+	z-index: 99999999999;
+	box-sizing: border-box;
+	@include drop-shadow-sm;
+	background: $secondColor;
+	border-right: $border_size solid $borderColor;
+
+	.tab{
+		cursor: pointer;
+		line-height: 7.5vh;
+		padding-left: $padding_base;
+		font-size: $smallFont + .05;
+		@include hover($blueColor);
+	}
+
+	@include scrollbar;
+	.actived{ background: $blueColor; }
+}

@@ -1,0 +1,66 @@
+.share-box{
+	top: 0;
+	right: 0;
+	width: 50vh;
+	display: none;
+	position: fixed;
+	margin: $padding_base;
+	z-index: 99999999999999;
+	background: $firstColor;
+	@include drop-shadow-sm;
+	@include no-text-select;
+	border-radius: $padding2;
+	margin-top: 23.5vh !important;
+	border: $border_size solid $borderColor;
+	border-left: $padding2 solid $blueColor;
+
+	.title{
+		line-height: 6vh;
+		font-size: $smallFont + .1;
+		padding-left: $padding_base;
+		border-top-left-radius: $padding2;
+		border-top-right-radius: $padding2;
+
+		.fa-times{
+			border-top-right-radius: $padding2;
+			border-bottom-right-radius: 0 !important;
+			@include hover($redColor !important);
+		}
+
+		@include icons{
+			width: 6vh;
+			float: right;
+			cursor: pointer;
+			line-height: 6vh;
+			text-align: center;
+			border-bottom-left-radius: $padding2;
+			border-bottom-right-radius: $padding2;
+			@include hover($blueColor);
+		}
+	}
+
+	.container{
+		text-align: center;
+
+		button{
+			border: 0;
+			width: 46vh;
+			outline: none;
+			color: inherit;
+			cursor: pointer;
+			line-height: 6vh;
+			background: transparent;
+			border-radius: $padding2;
+			border-color: $blueColor;
+			font-size: $smallFont + .1;
+
+			@include hover($secondColor) {
+				transition: all .2s ease-in-out;
+				border-left: $padding2 solid $blueColor;
+			}
+		}
+
+		@import 'select-box/hashes-list';
+		@import 'select-box/privacy-list';
+	}
+}

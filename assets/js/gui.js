@@ -1,0 +1,1 @@
+"use strict";window.onload=function(n){Events.click(close_btn,function(n){Windows.main_window_close()}),Events.click(minimize_btn,function(n){Windows.main_window_minimize()})};

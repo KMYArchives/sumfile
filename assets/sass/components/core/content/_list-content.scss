@@ -1,0 +1,63 @@
+.list-content{
+    top: 0;
+	height: 74.3vh;
+	overflow: auto;
+	margin-top: 8vh;
+	padding-top: 2vh;
+    margin-left: 22vh;
+	position: absolute;
+	padding-bottom: 2vh;
+	width: calc(100% - 22vh);
+
+	.item{
+		height: 7vh;
+		color: inherit;
+		display: block;
+		cursor: pointer;
+		line-height: 7vh;
+		margin-bottom: 1vh;
+		text-decoration: none;
+		box-sizing: border-box;
+		border-radius: $padding2;
+		margin-left: $padding_base;
+		margin-right: $padding_base;
+		border-left-color: transparent;
+
+		.label{
+			width: 16vh;
+			float: left;
+			cursor: pointer;
+			margin-left: $padding_base;
+		}
+
+		input{
+			float: left;
+			border: none;
+			width: 80.5vh;
+			outline: none;
+			color: inherit;
+			line-height: 6.8vh;
+			background: transparent;
+			padding-left: $padding_base;
+			padding-right: $padding_base;
+		}
+
+		@include icons{
+			width: 7vh;
+			float: left;
+			cursor: pointer;
+			line-height: 7vh;
+			text-align: center;
+			border-radius: $padding2;
+			@include hover($blueColor);
+		}
+
+		@include hover($secondColor) {
+			@include drop-shadow-sm;
+			transition: .3s ease-in-out;
+			border-left: $padding solid $blueColor;
+		}
+	}
+
+	@include scrollbar;
+}

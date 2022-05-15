@@ -1,0 +1,12 @@
+.content{
+	height: 86.4%;
+	overflow: auto;
+	width: 149.75vh;
+	position: absolute;
+	z-index: 9999999999;
+	margin-top: $header_size + $frame_size;
+
+	@import 'content/left-bar';
+	@import 'content/title-bar';
+	@import 'content/list-content';
+}

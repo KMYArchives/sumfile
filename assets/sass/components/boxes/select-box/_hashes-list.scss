@@ -1,0 +1,53 @@
+.hashes-list{
+	width: 46vh;
+	margin: $padding4;
+	border-radius: $padding2;
+
+	.value{
+		cursor: pointer;
+		line-height: 6vh;
+		text-align: left;
+		border-radius: $padding2;
+		border-color: $blueColor;
+		font-size: $smallFont + .1;
+		padding-left: $padding_base;
+
+		@include hover($secondColor) {
+			transition: all .2s ease-in-out;
+			border-left: $padding2 solid $blueColor;
+		}
+	}
+
+	.hashes{
+		display: none;
+		width: 44.75vh;
+		overflow: auto;
+		margin-top: 1vh;
+		max-height: 42vh;
+		text-align: left;
+		position: absolute;
+		@include drop-shadow-sm;
+		background: $secondColor;
+		border-radius: $padding2;
+		border-left: $padding2 solid $blueColor;
+
+		.item{
+			cursor: pointer;
+			line-height: 6vh;
+			font-size: $smallFont + .1;
+			padding-left: $padding_base;
+
+			@include hover($blueColor);
+			&:first-child{ border-top-right-radius: $padding2 }
+			&:last-child{ border-bottom-right-radius: $padding2 }
+		}
+
+		@include scrollbar;
+		.actived{ background: $blueColor; }
+	}
+
+	.actived{
+		background: $secondColor;
+		border-left: $padding2 solid $blueColor;
+	}
+}
