@@ -35,5 +35,6 @@
 		@include hover($blueColor);
 	}
 
+	.right{ display: none; }
 	.actived{ background: $blueColor; }
 }

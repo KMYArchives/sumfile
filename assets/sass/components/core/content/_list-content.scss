@@ -18,14 +18,14 @@
 		margin-bottom: 1vh;
 		text-decoration: none;
 		box-sizing: border-box;
-		border-radius: $padding2;
+		border-radius: $padding3;
 		margin-left: $padding_base;
 		margin-right: $padding_base;
 		border-left-color: transparent;
 
 		.label{
-			width: 16vh;
 			float: left;
+			width: 18vh;
 			cursor: pointer;
 			margin-left: $padding_base;
 		}
@@ -33,22 +33,24 @@
 		input{
 			float: left;
 			border: none;
-			width: 80.5vh;
+			width: 80.7vh;
 			outline: none;
 			color: inherit;
 			line-height: 6.8vh;
 			background: transparent;
+			border-radius: $padding3;
 			padding-left: $padding_base;
 			padding-right: $padding_base;
+			@include hover($firstColor);
 		}
 
 		@include icons{
-			width: 7vh;
 			float: left;
+			width: 6.8vh;
 			cursor: pointer;
-			line-height: 7vh;
+			line-height: 6.8vh;
 			text-align: center;
-			border-radius: $padding2;
+			border-radius: $padding3;
 			@include hover($blueColor);
 		}
 

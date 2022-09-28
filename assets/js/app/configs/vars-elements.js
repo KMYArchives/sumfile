@@ -14,4 +14,6 @@ const el_topbar = '#top-bar',
 	el_mdl_new_conn = '#mdl-new-conn',
 
 	el_menu_app = '#menu-app',
-	el_menu_app_btn = '#menu-app-btn'
+	el_menu_app_btn = '#menu-app-btn',
+
+	el_add_file_btn = '#add-files-btn'

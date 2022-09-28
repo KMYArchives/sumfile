@@ -25,7 +25,7 @@
 		<nav>
 			<div class="tab actived">Local</div>
 			<div class="tab">Cloud</div>
-			<div class="fas fa-plus"></div>
+			<div class="fas fa-plus" id="add-files-btn"></div>
 		</nav>
 	</div>
 
@@ -59,87 +59,71 @@
 
 	<div class="content">
 		<div class="title-bar">
-			<div class="fas fa-arrow-left"></div>
-			<div class="name">file.png</div>
+			<div class="fas fa-arrow-left" id="back-page"></div>
+			<div class="name" id="title-label"></div>
 
-			<div class="right bdr-lef">
+			<div class="right bdr-lef" id="actions-area">
 				<div class="fas fa-file-circle-check"></div>
 				<div class="fas fa-share"></div>
 				<div class="fas fa-save"></div>
 			</div>
 
-			<div class="button">Base 64</div>
-			<div class="button actived">Hexadecimal</div>
+			<div class="button" id="b64-btn">Base 64</div>
+			<div class="button actived" id="hex-btn">Hexadecimal</div>
 		</div>
 
 		<div class="left-bar">
 			<div class="tab actived">Hashes</div>
 			<div class="tab">Virus Total</div>
 			<div class="tab">Properties</div>
-			<div class="tab">Hex view</div>
-			<div class="tab">History</div>
 		</div>
 
-		<div class="list-content">
+		<div class="list-content" id="list-hashes">
 			<div class="item">
-				<div class="label">CRC 32</div>
-				<input type="text" value="xxxxxxxxxxx">
+				<div class="label">MD 4</div>
+				<input type="text" value="xxxxxxxxxxx" id="md4-hash">
 				<div class="fas fa-copy"></div>
 				<div class="fas fa-save"></div>
 			</div>
 
 			<div class="item">
 				<div class="label">MD 5</div>
-				<input type="text" value="xxxxxxxxxxx">
+				<input type="text" value="xxxxxxxxxxx" id="md5-hash">
 				<div class="fas fa-copy"></div>
 				<div class="fas fa-save"></div>
 			</div>
 
 			<div class="item">
 				<div class="label">SHA 1</div>
-				<input type="text" value="xxxxxxxxxxx">
+				<input type="text" value="xxxxxxxxxxx" id="sha1-hash">
+				<div class="fas fa-copy"></div>
+				<div class="fas fa-save"></div>
+			</div>
+
+			<div class="item">
+				<div class="label">SHA 224</div>
+				<input type="text" value="xxxxxxxxxxx" id="sha224-hash">
 				<div class="fas fa-copy"></div>
 				<div class="fas fa-save"></div>
 			</div>
 
 			<div class="item">
 				<div class="label">SHA 256</div>
-				<input type="text" value="xxxxxxxxxxx">
+				<input type="text" value="xxxxxxxxxxx" id="sha256-hash">
 				<div class="fas fa-copy"></div>
 				<div class="fas fa-save"></div>
 			</div>
 
 			<div class="item">
 				<div class="label">SHA 384</div>
-				<input type="text" value="xxxxxxxxxxx">
+				<input type="text" value="xxxxxxxxxxx" id="sha384-hash">
 				<div class="fas fa-copy"></div>
 				<div class="fas fa-save"></div>
 			</div>
 
 			<div class="item">
 				<div class="label">SHA 512</div>
-				<input type="text" value="xxxxxxxxxxx">
-				<div class="fas fa-copy"></div>
-				<div class="fas fa-save"></div>
-			</div>
-
-			<div class="item">
-				<div class="label">SHA3 224</div>
-				<input type="text" value="xxxxxxxxxxx">
-				<div class="fas fa-copy"></div>
-				<div class="fas fa-save"></div>
-			</div>
-
-			<div class="item">
-				<div class="label">SHA3 384</div>
-				<input type="text" value="xxxxxxxxxxx">
-				<div class="fas fa-copy"></div>
-				<div class="fas fa-save"></div>
-			</div>
-
-			<div class="item">
-				<div class="label">SHA3 512</div>
-				<input type="text" value="xxxxxxxxxxx">
+				<input type="text" value="xxxxxxxxxxx" id="sha512-hash">
 				<div class="fas fa-copy"></div>
 				<div class="fas fa-save"></div>
 			</div>
@@ -188,6 +172,8 @@
 	</div>
 
 	<script src="../assets/js/app.js"></script>
+	<script src="../assets/js/engine.js"></script>
+	<script src="../assets/js/plugins.js"></script>
 	<script src="../assets/js/gui.js"></script>
 </body>
 </html>
